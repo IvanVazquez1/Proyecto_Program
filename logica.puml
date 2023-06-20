@@ -1,0 +1,23 @@
+@startuml Diagrama Compuertas Lógicas
+
+class CompuertasLogicas {
+  - inputs: vector<bool>
+  + clearInputBuffer(): void
+  + printWelcomeMessage(): void
+  + printMenu(): void
+  + waitForEnter(): void
+  + getOption(): int
+  + performChangeValues(inputs: vector<bool>): void
+  + displayBooleanOperators(): void
+  + performAND(input1: bool, input2: bool): bool
+  + performOR(input1: bool, input2: bool): bool
+  + performNOT(input: bool): bool
+  + performXOR(input1: bool, input2: bool): bool
+  + performNAND(input1: bool, input2: bool): bool
+  + performBooleanOperations(inputs: vector<bool>): void
+  + generateKarnaughEquations(inputs: vector<bool>): void
+}
+
+CompuertasLogicas "1" --> "*" bool
+
+@enduml
